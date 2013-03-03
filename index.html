@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8" />
+<title>Animations</title>
+<meta name="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="css/screen.css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/backbone-min.js"></script>
+<script>
+$(function () {
+	$('#trigger').click(function () {
+		$('.box').addClass('on');
+	});
+	setTimeout(function () {
+		$('.box').addClass('on');
+	}, 500);
+});
+</script>
+</head>
+<body>
+
+<div class="box">
+<!--/.box--></div>
+
+<input type="button" name="trigger" id="trigger" value="action!">
+</body>
+</html>
